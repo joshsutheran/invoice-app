@@ -1,7 +1,9 @@
 import images from "../../constants/images/images";
+import FilterBox from "../filterBox/filterBox";
+
 import "./invoiceList.css";
 
-const InvoiceList = () => {
+const InvoiceList = (props) => {
   return (
     <div className="invoices__wrapper">
       <div className="invoices">
@@ -10,7 +12,7 @@ const InvoiceList = () => {
             <h1 className="invoice__title">Invoices</h1>
             <p className="invoice__subtitle">There are a total of 8 invoices.</p>
           </div>
-          <div className="invoice__filter">
+          <div onClick={props.filter} className="invoice__filter">
             <p>Filter by status</p>
             <img src={images.downArrow} alt="Down Arrow" />
           </div>
@@ -19,6 +21,7 @@ const InvoiceList = () => {
             <p>New Invoice</p>
           </div>
         </div>
+        <FilterBox filter={props.filterActive} />
         <div className="invoice__list"></div>
       </div>
     </div>

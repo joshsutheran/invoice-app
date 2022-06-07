@@ -1,0 +1,26 @@
+.filterbox {
+    position: absolute;
+    top: 18%;
+    right: 35%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 50px 20px 50px;
+    box-shadow: rgb(72 84 159 / 25%) 0px 10px 20px;
+    transition: box-shadow 0.1s ease 0s, background 0.1s ease 0s;
+    border-radius: 10px;
+}
+
+.filterbox__paid, 
+.filterbox__pending, 
+.filterbox__draft {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+} 
+
+.filterbox__paid input, 
+.filterbox__pending input, 
+.filterbox__draft input {
+    margin-right: 20px;
+} 
