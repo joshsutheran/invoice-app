@@ -1,11 +1,11 @@
 .filterbox {
     position: absolute;
     top: 18%;
-    right: 35%;
+    right: 38%;
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 20px 50px 20px 50px;
+    padding: 20px 50px 20px 30px;
     box-shadow: rgb(72 84 159 / 25%) 0px 10px 20px;
     transition: box-shadow 0.1s ease 0s, background 0.1s ease 0s;
     border-radius: 10px;
