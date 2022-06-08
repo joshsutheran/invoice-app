@@ -1,6 +1,6 @@
 .filterbox {
     position: absolute;
-    top: 18%;
+    top: 12%;
     right: 38%;
     display: flex;
     flex-direction: column;
@@ -24,3 +24,12 @@
 .filterbox__draft input {
     margin-right: 20px;
 } 
+
+.filterbox__paid input, 
+.filterbox__paid label,
+.filterbox__pending input,
+.filterbox__pending label, 
+.filterbox__draft input,
+.filterbox__draft label {
+    cursor: pointer;
+}
