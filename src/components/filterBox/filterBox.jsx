@@ -5,16 +5,16 @@ const FilterBox = (props) => {
     return (
       <div className="filterbox">
         <div className="filterbox__paid">
-          <input type="checkbox" id="filter" name="paid" value="Paid" />
-          <p>Paid</p>
+          <input onChange={props.filterChange} checked={props.filterPaid} type="checkbox" id="filter-paid" name="paid" value="Paid" />
+          <label htmlFor="filter-paid">Paid</label>
         </div>
         <div className="filterbox__pending">
-          <input type="checkbox" id="filter" name="pending" value="Pending" />
-          <p>Pending</p>
+          <input onChange={props.filterChange} checked={props.filterPending} type="checkbox" id="filter-pending" name="pending" value="Pending" />
+          <label htmlFor="filtr-pending">Pending</label>
         </div>
         <div className="filterbox__draft">
-          <input type="checkbox" id="filter" name="draft" value="Draft" />
-          <p>Draft</p>
+          <input onChange={props.filterChange} checked={props.filterDraft} type="checkbox" id="filter-draft" name="draft" value="Draft" />
+          <label htmlFor="filter-draft">Draft</label>
         </div>
       </div>
     )
